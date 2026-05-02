@@ -28,6 +28,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChessLogic\ChessLogic.csproj" />
+    <ProjectReference Include="..\ChessAI\ChessAI.csproj" />
+    <ProjectReference Include="..\ChessPersistence\ChessPersistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -8,15 +8,39 @@
     ".NETCoreApp,Version=v6.0": {
       "ChessUI/1.0.0": {
         "dependencies": {
-          "ChessLogic": "1.0.0"
+          "ChessAI": "1.0.0",
+          "ChessLogic": "1.0.0",
+          "ChessPersistence": "1.0.0"
         },
         "runtime": {
           "ChessUI.dll": {}
         }
       },
+      "ChessAI/1.0.0": {
+        "dependencies": {
+          "ChessLogic": "1.0.0"
+        },
+        "runtime": {
+          "ChessAI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ChessLogic/1.0.0": {
         "runtime": {
           "ChessLogic.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ChessPersistence/1.0.0": {
+        "dependencies": {
+          "ChessLogic": "1.0.0"
+        },
+        "runtime": {
+          "ChessPersistence.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -30,7 +54,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ChessAI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ChessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChessPersistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

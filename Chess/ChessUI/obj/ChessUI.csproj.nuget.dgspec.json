@@ -1,17 +1,84 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\ChessUI.csproj": {}
+    "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\ChessUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
+    "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\ChessAI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj",
-        "projectName": "ChessLogic",
-        "projectPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\ChessAI.csproj",
+        "projectName": "ChessAI",
+        "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\ChessAI.csproj",
         "packagesPath": "C:\\Users\\Matteo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\obj\\",
+        "outputPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Matteo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
+                "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj",
+        "projectName": "ChessLogic",
+        "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj",
+        "packagesPath": "C:\\Users\\Matteo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matteo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,20 +125,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -81,14 +134,81 @@
         }
       }
     },
-    "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\ChessUI.csproj": {
+    "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\ChessPersistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
-        "projectName": "ChessUI",
-        "projectPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
+        "projectUniqueName": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\ChessPersistence.csproj",
+        "projectName": "ChessPersistence",
+        "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\ChessPersistence.csproj",
         "packagesPath": "C:\\Users\\Matteo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\obj\\",
+        "outputPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Matteo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
+                "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\ChessUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
+        "projectName": "ChessUI",
+        "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
+        "packagesPath": "C:\\Users\\Matteo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matteo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -106,8 +226,14 @@
             "framework": "net6.0-windows7.0",
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
-                "projectPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj"
+              "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\ChessAI.csproj": {
+                "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\ChessAI.csproj"
+              },
+              "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
+                "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj"
+              },
+              "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\ChessPersistence.csproj": {
+                "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\ChessPersistence.csproj"
               }
             }
           }

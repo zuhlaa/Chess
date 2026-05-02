@@ -115,7 +115,24 @@
                 copy[pos] = this[pos].Copy();
             }
 
+            copy.SetPawnSkipPosition(Player.White, GetPawnSkipPosition(Player.White));
+            copy.SetPawnSkipPosition(Player.Black, GetPawnSkipPosition(Player.Black));
+
             return copy;
+        }
+
+        public void RestoreFrom(Board source)
+        {
+            for (int r = 0; r < 8; r++)
+            {
+                for (int c = 0; c < 8; c++)
+                {
+                    pieces[r, c] = source.pieces[r, c]?.Copy();
+                }
+            }
+
+            SetPawnSkipPosition(Player.White, source.GetPawnSkipPosition(Player.White));
+            SetPawnSkipPosition(Player.Black, source.GetPawnSkipPosition(Player.Black));
         }
 
         public Counting CountPieces()

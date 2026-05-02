@@ -6,12 +6,14 @@
         public override Position FromPos { get; }
         public override Position ToPos { get; }
 
+        public PieceType PromotionPieceType { get; }
         private readonly PieceType newType;
 
         public PawnPromotion(Position from, Position to, PieceType newType)
         {
             FromPos = from;
             ToPos = to;
+            PromotionPieceType = newType;
             this.newType = newType;
         }
 

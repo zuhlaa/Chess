@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "ChessAI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ChessLogic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ChessAI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChessAI.dll": {}
+        }
+      },
       "ChessLogic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -11,19 +24,44 @@
         "runtime": {
           "bin/placeholder/ChessLogic.dll": {}
         }
+      },
+      "ChessPersistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ChessLogic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ChessPersistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChessPersistence.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ChessAI/1.0.0": {
+      "type": "project",
+      "path": "../ChessAI/ChessAI.csproj",
+      "msbuildProject": "../ChessAI/ChessAI.csproj"
+    },
     "ChessLogic/1.0.0": {
       "type": "project",
       "path": "../ChessLogic/ChessLogic.csproj",
       "msbuildProject": "../ChessLogic/ChessLogic.csproj"
+    },
+    "ChessPersistence/1.0.0": {
+      "type": "project",
+      "path": "../ChessPersistence/ChessPersistence.csproj",
+      "msbuildProject": "../ChessPersistence/ChessPersistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "ChessLogic >= 1.0.0"
+      "ChessAI >= 1.0.0",
+      "ChessLogic >= 1.0.0",
+      "ChessPersistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
+      "projectUniqueName": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
       "projectName": "ChessUI",
-      "projectPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
+      "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\ChessUI.csproj",
       "packagesPath": "C:\\Users\\Matteo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessUI\\obj\\",
+      "outputPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Matteo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,11 +89,16 @@
       },
       "frameworks": {
         "net6.0-windows7.0": {
-          "framework": "net6.0-windows7.0",
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
-              "projectPath": "C:\\Users\\Matteo\\Downloads\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj"
+            "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\ChessAI.csproj": {
+              "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessAI\\ChessAI.csproj"
+            },
+            "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj": {
+              "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessLogic\\ChessLogic.csproj"
+            },
+            "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\ChessPersistence.csproj": {
+              "projectPath": "C:\\Users\\Matteo\\source\\repos\\Chess\\Chess\\ChessPersistence\\ChessPersistence.csproj"
             }
           }
         }
@@ -74,7 +117,6 @@
     },
     "frameworks": {
       "net6.0-windows7.0": {
-        "framework": "net6.0-windows7.0",
         "targetAlias": "net6.0-windows",
         "imports": [
           "net461",
